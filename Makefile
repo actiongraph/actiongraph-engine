@@ -8,6 +8,7 @@ clean:
 build: clean
 	@echo "begin building .."
 	go build -o build/app main.go
+	mkdir ./build/data
 	@echo "building done"
 
 build-linux: clean
